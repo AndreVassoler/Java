@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+
+public class Main {
+    public static void main(String[] args) {
+       
+        Pessoa pessoa1 = new Pessoa("Alice", LocalDate.of(2006, 3, 4));
+        Pessoa pessoa2 = new Pessoa("Bob", LocalDate.of(1990, 5, 15));
+        Pessoa pessoa3 = new Pessoa("Charlie", LocalDate.of(1985, 8, 23), 38);
+
+       
+        System.out.println("Pessoa 1: " + pessoa1.getNome() + ", Data de Nascimento: " + pessoa1.getDataNascimento() + ", Idade: " + pessoa1.getIdade());
+        System.out.println("Pessoa 2: " + pessoa2.getNome() + ", Data de Nascimento: " + pessoa2.getDataNascimento() + ", Idade: " + pessoa2.getIdade());
+        System.out.println("Pessoa 3: " + pessoa3.getNome() + ", Data de Nascimento: " + pessoa3.getDataNascimento() + ", Idade: " + pessoa3.getIdade());
+
+        
+        pessoa1.setDataNascimento(LocalDate.of(1995, 2, 10));
+        pessoa2.setIdade(33);
+    }
+}
